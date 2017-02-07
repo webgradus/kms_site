@@ -1,38 +1,32 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="footer-links">
+                    <ul class="footer-group">
+                      {% for my_page in site.pages %}
+                      {% if my_page.title %}
+                      <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title}}</a></li>
+                      {% endif %}
+                      {% endfor %}
+                    </ul>
+                    <p>Copyright © 2017 <a href="{{ site.baseurl }}/">KMS</a><br>
+                    <a href="http://tympanus.net/codrops/licensing/">Licence</a> | Crafted with <span class="fa fa-heart pulse2"></span> by <a href="http://www.peterfinlan.com/">Peter Finlan</a>.</p>
+                </div>
+            </div>
+            <div class="social-share">
+                <p>Share Sedna with your friends</p>
+                <a href="https://twitter.com/peterfinlan" class="twitter-share"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook-share"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
     </div>
-
-  </div>
-
 </footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/retina.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
