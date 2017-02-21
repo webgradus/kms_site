@@ -1,6 +1,6 @@
 ---
-layout: default
+layout: page
 title: Documentation
-permalink: /documentation/
+permalink: /documentation
 ---
 Here will be documentation
