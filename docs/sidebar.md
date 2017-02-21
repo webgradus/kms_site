@@ -1,0 +1,6 @@
+- Getting started
+ - [Installation](/installation)
+ - [Website creation](/creation)
+- API
+- Extensions
+ - [Creating extension](/new-extension)
