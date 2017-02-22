@@ -10,11 +10,7 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                          {% for my_page in site.pages %}
-                          {% if my_page.title %}
-                            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-                          {% endif %}
-                          {% endfor %}
+                          <li><a href="{{ site.url }}/about">About</a></li>
                           <li><a href="{{ site.url }}/docs">Documentation</a></li>
                         </ul>
                         <ul class="member-actions">
